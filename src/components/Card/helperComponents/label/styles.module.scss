@@ -1,0 +1,38 @@
+$colors: red, green, blue;
+
+.root {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.label {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+
+  cursor: pointer;
+
+  @each $color in $colors {
+    &[data-color="#{$color}"] {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        background-color: $color;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: gray;
+    border-radius: 2px;
+  }
+}
+
+.active {
+  background-color: lightgray;
+}

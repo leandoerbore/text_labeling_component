@@ -1,0 +1,36 @@
+.root {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 400px 160px;
+
+  gap: 16px;
+
+  width: fit-content;
+}
+
+.content {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: white;
+
+  .title {
+    border-bottom: 1px solid black;
+    margin-block: 8px;
+  }
+
+  .text {
+    white-space: pre-wrap;
+  }
+}
+
+.labels {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: white;
+
+  .title {
+    border-bottom: 1px solid black;
+    margin-block: 8px;
+  }
+}
