@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "serve": "vite preview --port 8080"
   },
   "dependencies": {
     "classnames": "2.5.1",
